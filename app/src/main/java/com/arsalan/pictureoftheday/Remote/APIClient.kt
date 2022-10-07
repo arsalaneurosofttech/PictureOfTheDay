@@ -18,7 +18,6 @@ class APIClient {
     private var instance: APIClient? = null
     private val BASE_URL: String = Constants.BASE_URL
     private var retrofit: Retrofit? = null
-    var apiService: APIInterface? = APIClient()?.getClient()?.create(APIInterface::class.java)
 
 
     fun getUnsafeOkHttpClient(): OkHttpClient.Builder? {
